@@ -7,6 +7,7 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="fg*:bg*:history*:cd*:ls*"
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
+export HOMEBREW_GITHUB_API_TOKEN=@@@@@@@@@@@@@@@@@@@
 
 alias ls='ls -G'
 alias ll='ls -l'
