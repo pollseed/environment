@@ -1,6 +1,6 @@
 #bowerのインストールとライブラリ追加
 
-```
+```.sh
 brew install node
 
 # 一応全部で使えるように
