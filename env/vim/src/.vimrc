@@ -34,6 +34,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'grep.vim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'elzr/vim-json'
 NeoBundle 'drillbits/nyan-modoki.vim'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
