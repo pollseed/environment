@@ -73,5 +73,6 @@ heroku login
 cd hoge
 heroku create
 git push heroku master
+heroku rename hoge
 heroku open
 ```
