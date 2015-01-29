@@ -1,14 +1,19 @@
 # Setting
 
 ## ENV
+
+```
 OS     : MacYosemite || CentOS6
 rbenv  : 0.4.0
 Ruby   : 2.0.0 || 2.2.0
 Rails  : 4.2.0
 Pow    : 0.5.0
 powder : 0.3.0
+```
 
 ## rbenv
+
+```.sh
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
@@ -29,20 +34,30 @@ ruby -v
   ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
   brew update
   brew install rbenv ruby-build
+```
 
 ## Xcode Command-Line tools
+
+```.sh
 xcode-select --install
+```
 
 ## Powder
+
+```.sh
 curl get.pow.cx | sh
 sudo gem install bundler
 sudo gem install powder
 sudo gem install rails
+```
 
 # How To Use
 
 ## Power Hosts Link
+
+```.sh
 rails new hoge
 cd hoge
 powder link
 powder open
+```
