@@ -60,4 +60,5 @@ rails new hoge
 cd hoge
 powder link
 powder open
+powder list
 ```
