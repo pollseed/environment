@@ -1,18 +1,21 @@
-# ENV
+# Setting
+
+## ENV
 OS     : MacYosemite || CentOS6
 rbenv  : 0.4.0
 Ruby   : 2.0.0 || 2.2.0
 Rails  : 4.2.0
+Pow    : 0.5.0
 powder : 0.3.0
 
-# rbenv
+## rbenv
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 source ~/.bash_profile
 {$OS}
-## MacはRuby2.0なので特に理由がなければ入れない
+### MacはRuby2.0なので特に理由がなければ入れない
 rbenv install -l
 rbenv install 2.2.0
 rbenv global 2.2.0
@@ -27,10 +30,19 @@ ruby -v
   brew update
   brew install rbenv ruby-build
 
-# Xcode Command-Line tools
+## Xcode Command-Line tools
 xcode-select --install
 
-# Powder
+## Powder
+curl get.pow.cx | sh
 sudo gem install bundler
 sudo gem install powder
 sudo gem install rails
+
+# How To Use
+
+## Power Hosts Link
+rails new hoge
+cd hoge
+powder link
+powder open
