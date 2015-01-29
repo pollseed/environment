@@ -1,5 +1,9 @@
 # ENV
-OS : MacYosemite || CentOS6
+OS     : MacYosemite || CentOS6
+rbenv  : 0.4.0
+Ruby   : 2.0.0 || 2.2.0
+Rails  : 4.2.0
+powder : 0.3.0
 
 # rbenv
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
