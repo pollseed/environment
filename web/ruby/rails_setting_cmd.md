@@ -67,14 +67,26 @@ powder list
 ## [Heroku](https://dashboard.heroku.com/apps) Deploy
 
 ```.sh
+# install
 brew cask install heroku-toolbelt
 heroku login
 # input for email / password
 cd hoge
+
+# create
 heroku create
+
+# deploy main
 git push heroku master
+heroku logs
+
+# rename
 heroku rename hoge
+
+# models
 heroku run rake db:migrate
+
+# open
 heroku open
 ```
 
