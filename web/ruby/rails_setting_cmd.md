@@ -107,6 +107,16 @@ bundle install
 rails generate scaffold User nickname:string
 rails generate scaffold Info name:string email:string
 bundle exec rake db:migrate
+
+# create
+rails generate controller HogeFuga hoge fuga
+rails generate model User nickname:string
+bundle exec rake db:migrate
+
+# delete
+rails destroy controller HogeFuga hoge fuga
+rails destroy model User
+bundle exec rake db:rollback or rake db:migrate VERSION=0
 ```
 
 ```.rb
