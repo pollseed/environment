@@ -79,6 +79,15 @@ heroku open
 ```
 
 ## Develop
+
+###bundle
+
+```
+bundle install --without production
+bundle update
+bundle install
+```
+
 ###scaffold
 
 ```
