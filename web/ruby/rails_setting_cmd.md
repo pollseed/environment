@@ -74,5 +74,27 @@ cd hoge
 heroku create
 git push heroku master
 heroku rename hoge
+heroku run rake db:migrate
 heroku open
 ```
+
+## Develop
+###scaffold
+
+```
+# Unique id はオート String型ではなくstringなので注意
+rails generate scaffold User nickname:string
+rails generate scaffold Info name:string email:string
+bundle exec rake db:migrate
+```
+
+```.rb
+# 外部キーの設定など
+# one to many
+class User < ActiveRecord::Base
+  has_many:infos
+end
+# many to one
+class Info < ActiveRecord::Base
+  belongs_to:user
+end
