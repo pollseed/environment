@@ -168,3 +168,8 @@ str[0..-1]
   end
 ```
 
+```.rb
+# include
+1.layouts/_home.html.erbを作成
+2.<%= render 'layouts/hoge' %>
+```
