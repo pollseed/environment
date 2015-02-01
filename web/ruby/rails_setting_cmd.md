@@ -102,7 +102,7 @@ bundle install
 
 ###scaffold
 
-```
+```.sh
 # Unique id はオート String型ではなくstringなので注意
 rails generate scaffold User nickname:string
 rails generate scaffold Info name:string email:string
@@ -129,3 +129,42 @@ end
 class Info < ActiveRecord::Base
   belongs_to:user
 end
+```
+
+###tips
+
+```.rb
+# ソートして変数に上書き
+str = "140,143,150,142".split(",")
+str.sort!
+str[0..-1]
+```
+
+```.java
+/* ランダム文字列拝借でJavaとRubyコード量比較 */
+
+  // Javaだと
+  public static String getRandomNumber(int length) {
+      final String[] _alpha = 
+      { "a", "b", "c", "d", "e", "f", "g", "h", "i", 
+      "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+      "s", "t", "u", "v", "w", "x", "y", "z" };
+      List<String> alphaList = Arrays.asList(_alpha);
+      Collections.shuffle(alphaList);
+      StringBuilder sb = new StringBuilder();
+      int i = 0;
+      for (String str : (String[]) alphaList.toArray()) {
+          if (i >= length)
+              break;
+          sb.append(str);
+          i++;
+      }
+      return sb.toString();
+  }
+  
+  // Rubyだと
+  def getRandomNumber(length)
+    ('a'..'z').to_a.shuffle[0..length].join
+  end
+```
+
