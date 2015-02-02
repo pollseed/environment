@@ -85,6 +85,7 @@ heroku rename hoge
 
 # models
 heroku run rake db:migrate
+heroku restart
 
 # open
 heroku open
