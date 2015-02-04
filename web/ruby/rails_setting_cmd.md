@@ -132,6 +132,23 @@ class Info < ActiveRecord::Base
 end
 ```
 
+###migration
+
+```.rb
+# migrationファイル生成
+$ rails generate migration add_index_to_users_name
+
+# index追加の処理を追記
+class AddIndexToUsersName < ActiveRecord::Migration
+  def change
+    add_index :users :name
+  end
+end
+
+# migrate処理
+$ bundle exec rake db:migrate
+```
+
 ###tips
 
 ```.rb
