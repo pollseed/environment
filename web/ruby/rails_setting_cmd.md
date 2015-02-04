@@ -174,3 +174,12 @@ str[0..-1]
 1.layouts/_home.html.erbを作成
 2.<%= render 'layouts/hoge' %>
 ```
+
+```.rb
+# Gemfile
+gem 'faker'
+
+# マスクデータを突っ込む→migrateを参照したくなければ(bundle exec rake db:reset)
+$ bundle exec rake db:migrate:reset
+$ bundle exec rake db:populate
+```
