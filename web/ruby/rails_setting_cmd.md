@@ -124,7 +124,7 @@ bundle exec rake db:rollback or rake db:migrate VERSION=0
 # 外部キーの設定など
 # one to many
 class User < ActiveRecord::Base
-  has_many:infos
+  has_many:infos, dependent: :destroy
 end
 # many to one
 class Info < ActiveRecord::Base
@@ -193,10 +193,18 @@ str[0..-1]
 ```
 
 ```.rb
+# ダミーデータ挿入
 # Gemfile
 gem 'faker'
 
 # マスクデータを突っ込む→migrateを参照したくなければ(bundle exec rake db:reset)
 $ bundle exec rake db:migrate:reset
 $ bundle exec rake db:populate
+```
+
+```.rb
+# バリデート
+class Hoge < ActiveRecord::Base
+  validates:name, length: {maximum:50}
+end
 ```
