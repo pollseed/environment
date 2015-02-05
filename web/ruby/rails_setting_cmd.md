@@ -1,5 +1,13 @@
 # Setting
 
+## sample PJを置いておいた
+[sample_pj](https://github.com/pollseed/rails_sample_hoge_develop)
+
+### 手っ取り早く試す
+1. [secrets.yml](https://github.com/pollseed/rails_sample_hoge_develop/blob/develop/config/secrets.yml)のsecret_key_baseを入れ込む
+2. 以下の環境設定をする
+3. 以下のHerokuのコマンド通りにデプロイ  
+
 ## ENV
 
 ```
