@@ -208,3 +208,9 @@ class Hoge < ActiveRecord::Base
   validates:name, length: {maximum:50}
 end
 ```
+
+```.rb
+# 省略
+[1,2,3,4].map { |i| i.to_s }.join(",")
+[1,2,3,4].map(&:to_s).join(",")
+```
