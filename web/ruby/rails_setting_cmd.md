@@ -83,6 +83,7 @@ cd hoge
 
 # create
 heroku create
+heroku git:remote -a App名
 
 # deploy main
 git push heroku master
