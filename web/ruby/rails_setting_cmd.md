@@ -85,6 +85,16 @@ cd hoge
 heroku create
 heroku git:remote -a App名
 
+# develop/prodの切り分け
+# Gemfile
+group :development,:test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # deploy main
 git push heroku master
 heroku logs
