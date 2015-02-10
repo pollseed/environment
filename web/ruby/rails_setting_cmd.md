@@ -233,3 +233,8 @@ end
 [1,2,3,4].map { |i| i.to_s }.join(",")
 [1,2,3,4].map(&:to_s).join(",")
 ```
+
+```.rb
+# css framework 適用
+bundle exec rake assets:precompile Rails_ENV=development
+```
