@@ -238,3 +238,9 @@ end
 # css framework 適用
 bundle exec rake assets:precompile Rails_ENV=development
 ```
+
+```.rb
+# bootstrap's template made
+rails g bootstrap:install
+rails g bootstrap:layout application
+```
