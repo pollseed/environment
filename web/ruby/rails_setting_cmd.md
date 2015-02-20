@@ -218,7 +218,7 @@ gem 'faker'
 
 # マスクデータを突っ込む→migrateを参照したくなければ(bundle exec rake db:reset)
 $ bundle exec rake db:migrate:reset
-$ bundle exec rake db:populate
+$ bundle exec rake db:populate(bundle exec rake db:seed)
 ```
 
 ```.rb
