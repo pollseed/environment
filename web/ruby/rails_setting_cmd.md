@@ -244,3 +244,26 @@ bundle exec rake assets:precompile Rails_ENV=development
 rails g bootstrap:install
 rails g bootstrap:layout application
 ```
+
+```.rb
+# user Helper by controller's file
+# 共通のApplicationHelperにhogeメソッドを作っておく
+module ApplicationHelper
+  def hoge
+    puts("hoge")
+  end
+end
+
+# 共通のApplicationControllerにApplicationHelperをインクルードしておく
+class ApplicationController < ActionController::Base
+  include ApplicationHelper
+end
+
+# 使いたいコントローラからHelperメソッドを呼び出す
+class WelcomeController < ApplicationController
+  def index
+    hoge
+  end
+end
+
+```
