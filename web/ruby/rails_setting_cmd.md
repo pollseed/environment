@@ -246,7 +246,7 @@ rails g bootstrap:layout application
 ```
 
 ```.rb
-# user Helper by controller's file
+# use Helper by controller's file(通常はやらない)
 # 共通のApplicationHelperにhogeメソッドを作っておく
 module ApplicationHelper
   def hoge
@@ -263,6 +263,21 @@ end
 class WelcomeController < ApplicationController
   def index
     hoge
+  end
+end
+
+# use Model by controller's file
+# modelにメソッドをself付きで作っておく
+class Hoge < ActiveRecord::Base
+  def self.find_by
+    Hoge.where(:deleted => false)
+  end
+end
+
+# 使いたいコントローラからModelメソッドを呼び出す
+class WelcomeController < ApplicationController
+  def index
+    find_by
   end
 end
 
