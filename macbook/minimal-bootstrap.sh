@@ -34,4 +34,8 @@ mysql.server start
 ## mysql_secure_installation
 ## mysql -uroot -p
 
-
+# R
+brew tap homebrew/science
+brew install r
+brew cask install xquartz
+brew cask install rstudio
