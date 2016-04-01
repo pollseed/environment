@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
-brew install caskroom/cask/brew-cask
+# brew install caskroom/cask/brew-cask (only old version)
 
 # anyenv
 git clone https://github.com/riywo/anyenv ~/.anyenv
